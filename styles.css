@@ -1,7 +1,10 @@
 
-.grid {
-    -fx-background-color: #000000;
+
+.root {
+    -fx-background-color: #BDBDBD;
 }
+
+
 
 .label {
     -fx-font-size: 12px;
@@ -10,6 +13,8 @@
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
 }
 
+
+
 #welcome-text {
    -fx-font-size: 32px;
    -fx-font-family: "Arial Black";
@@ -17,11 +22,15 @@
    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
 }
 
+
+
 #actiontarget {
   -fx-fill: FIREBRICK;
   -fx-font-weight: bold;
   -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
 }
+
+
 
 .button {
     -fx-text-fill: white;
