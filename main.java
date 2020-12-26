@@ -23,15 +23,30 @@ import java.net.MalformedURLException;
  
 public class main extends Application {
     
+    String usrname = "test";
+    String pwd = "123";
+    
     public static void main(String[] args) {
         launch(args);
     }
     
     @FXML private Text actiontarget;
     
+    //The username and password textfields 
+    @FXML private TextField usernameField;
+    @FXML private PasswordField passwordField;
+    
     @FXML private void buttonPress (ActionEvent e) throws Exception
     {
-        actiontarget.setText("Sign in button pressed");
+        if(!(usernameField.getText().equals(usrname)) || !(passwordField.getText().equals(pwd)))
+            {
+                actiontarget.setText("Incorrect username or password");
+                System.out.print("Username:"+usernameField.getText()+"-\tPassword:"+passwordField.getText()+"-\n");
+            }
+        else
+            {
+                actiontarget.setText("Successfully signed in");
+            }
     }
     
     @Override
